@@ -1,9 +1,15 @@
 <script>
+  import Datos from "./Datos.svelte";
   export let name;
+  let persona = {
+    nombre: "Julio",
+    apellido: "Gonzalez",
+  };
 </script>
 
 <main>
-  <h1>Hello my name is {name}</h1>
+  <h1>Hello my name is {name}!</h1>
+  <Datos {...persona} />
 </main>
 
 <style>
